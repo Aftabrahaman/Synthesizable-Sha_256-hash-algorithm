@@ -31,6 +31,7 @@ How It Works
 	Length Encoding: The message length (in bits) is written into the final 64 bits of the block, allowing the hash algorithm to process variable-length inputs.
 
  			
- 	 		
+ 	 		![image](https://github.com/user-attachments/assets/0b668640-05dd-43df-a4a9-fe9752a7c2b9)
+
  		
  			
