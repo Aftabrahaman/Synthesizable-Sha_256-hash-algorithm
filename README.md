@@ -30,8 +30,8 @@ How It Works
 	‘1’ Bit Injection: A 1 is placed at the position bit_length to mark the end of the message (per SHA-256 standards).
 	Length Encoding: The message length (in bits) is written into the final 64 bits of the block, allowing the hash algorithm to process variable-length inputs.
 
- 			
- 	 		![image](https://github.com/user-attachments/assets/0b668640-05dd-43df-a4a9-fe9752a7c2b9)
+ ![image](https://github.com/user-attachments/assets/b1f8687b-87ac-4192-8434-611e7fc94a5a)
+
 
  		
  			
