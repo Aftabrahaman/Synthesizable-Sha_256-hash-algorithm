@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../sha_256_core.srcs/sources_1/new/bit_to_byte.sv" \
+"../../../../sha_256_core.srcs/sources_1/new/find_length.sv" \
+"../../../../sha_256_core.srcs/sources_1/new/padding_m.sv" \
+"../../../../sha_256_core.srcs/sources_1/new/design_sha256.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

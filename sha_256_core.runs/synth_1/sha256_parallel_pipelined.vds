@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed May  7 15:30:00 2025
+# Process ID: 12228
+# Current directory: H:/SHA-256/sha_256_core/sha_256_core.runs/synth_1
+# Command line: vivado.exe -log sha256_parallel_pipelined.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sha256_parallel_pipelined.tcl
+# Log file: H:/SHA-256/sha_256_core/sha_256_core.runs/synth_1/sha256_parallel_pipelined.vds
+# Journal file: H:/SHA-256/sha_256_core/sha_256_core.runs/synth_1\vivado.jou
+# Running On: Aftab, OS: Windows, CPU Frequency: 2600 MHz, CPU Physical cores: 4, Host memory: 6374 MB
+#-----------------------------------------------------------
+source sha256_parallel_pipelined.tcl -notrace
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:40 . Memory (MB): peak = 468.480 ; gain = 183.344
+Command: read_checkpoint -auto_incremental -incremental H:/SHA-256/sha_256_core/sha_256_core.srcs/utils_1/imports/synth_1/sha256_parallel_pipelined.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from H:/SHA-256/sha_256_core/sha_256_core.srcs/utils_1/imports/synth_1/sha256_parallel_pipelined.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top sha256_parallel_pipelined -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 11936
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1306.070 ; gain = 440.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sha256_parallel_pipelined' [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'bit_to_byte' [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/bit_to_byte.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'bit_to_byte' (0#1) [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/bit_to_byte.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'find_length' [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/find_length.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'find_length' (0#1) [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/find_length.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'padding_m' [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/padding_m.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'padding_m' (0#1) [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/padding_m.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sha256_parallel_pipelined' (0#1) [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:1]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][31] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][30] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][29] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][28] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][27] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][26] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][25] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][24] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][23] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][22] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][21] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][20] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][19] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][18] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][17] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][16] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][15] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][14] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][13] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][12] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][11] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][10] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][9] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][8] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][7] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][5] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][4] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][3] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][2] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][1] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[w][0] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element stage_reg_reg[valid] was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:122]
+WARNING: [Synth 8-6014] Unused sequential element cycle_counter_reg was removed.  [H:/SHA-256/sha_256_core/sha_256_core.srcs/sources_1/new/design_sha256.sv:123]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:45 . Memory (MB): peak = 1436.723 ; gain = 571.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 1436.723 ; gain = 571.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 1436.723 ; gain = 571.359
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.254 . Memory (MB): peak = 1436.723 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [H:/SHA-256/sha_256_core/sha_256_core.srcs/constrs_1/new/sha_256_schematic.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'user_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [H:/SHA-256/sha_256_core/sha_256_core.srcs/constrs_1/new/sha_256_schematic.xdc:258]
+Finished Parsing XDC File [H:/SHA-256/sha_256_core/sha_256_core.srcs/constrs_1/new/sha_256_schematic.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1543.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1543.207 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:01:20 . Memory (MB): peak = 1543.207 ; gain = 677.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:01:20 . Memory (MB): peak = 1543.207 ; gain = 677.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:21 . Memory (MB): peak = 1543.207 ; gain = 677.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:28 . Memory (MB): peak = 1543.207 ; gain = 677.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input  512 Bit       Adders := 1     
+	   4 Input   32 Bit       Adders := 45    
+	   5 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   3 Input     32 Bit         XORs := 93    
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 16    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	 130 Input   32 Bit        Muxes := 1     
+	  16 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 8     
+	  16 Input   17 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	  16 Input    4 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:16 ; elapsed = 00:03:12 . Memory (MB): peak = 1695.367 ; gain = 830.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:27 ; elapsed = 00:03:26 . Memory (MB): peak = 1695.367 ; gain = 830.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:28 ; elapsed = 00:03:27 . Memory (MB): peak = 1695.367 ; gain = 830.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:35 ; elapsed = 00:03:36 . Memory (MB): peak = 1749.723 ; gain = 884.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:47 ; elapsed = 00:03:49 . Memory (MB): peak = 1763.293 ; gain = 897.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:47 ; elapsed = 00:03:49 . Memory (MB): peak = 1763.293 ; gain = 897.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:47 ; elapsed = 00:03:50 . Memory (MB): peak = 1763.293 ; gain = 897.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:47 ; elapsed = 00:03:50 . Memory (MB): peak = 1763.293 ; gain = 897.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:48 ; elapsed = 00:03:50 . Memory (MB): peak = 1763.293 ; gain = 897.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:48 ; elapsed = 00:03:50 . Memory (MB): peak = 1763.293 ; gain = 897.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   512|
+|3     |LUT1   |   137|
+|4     |LUT2   |   624|
+|5     |LUT3   |   392|
+|6     |LUT4   |   967|
+|7     |LUT5   |  2874|
+|8     |LUT6   |  1956|
+|9     |MUXF7  |     9|
+|10    |FDCE   |   525|
+|11    |IBUF   |   519|
+|12    |OBUF   |   257|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:48 ; elapsed = 00:03:50 . Memory (MB): peak = 1763.293 ; gain = 897.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:16 ; elapsed = 00:03:37 . Memory (MB): peak = 1763.293 ; gain = 791.445
+Synthesis Optimization Complete : Time (s): cpu = 00:02:48 ; elapsed = 00:03:50 . Memory (MB): peak = 1763.293 ; gain = 897.930
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.199 . Memory (MB): peak = 1763.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 521 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'sha256_parallel_pipelined' is not ideal for floorplanning, since the cellview 'sha256_parallel_pipelined' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1763.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 180fa384
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:03 ; elapsed = 00:04:59 . Memory (MB): peak = 1763.293 ; gain = 1290.836
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1763.293 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/SHA-256/sha_256_core/sha_256_core.runs/synth_1/sha256_parallel_pipelined.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sha256_parallel_pipelined_utilization_synth.rpt -pb sha256_parallel_pipelined_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May  7 15:36:02 2025...

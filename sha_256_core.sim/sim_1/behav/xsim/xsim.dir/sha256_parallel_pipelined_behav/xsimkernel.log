@@ -1,0 +1,4 @@
+Running: xsim.dir/sha256_parallel_pipelined_behav/xsimk.exe -simmode gui -wdb sha256_parallel_pipelined_behav.wdb -simrunnum 0 -socket 58881
+Design successfully loaded
+Design Loading Memory Usage: 9460 KB (Peak: 9460 KB)
+Design Loading CPU Usage: 77 ms
