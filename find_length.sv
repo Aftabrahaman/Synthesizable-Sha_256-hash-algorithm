@@ -26,9 +26,9 @@ input [3:0] last_word,
 output int unsigned  size
  );
    
-function int  find_length(input logic [127:0][3:0] m_input);
+function int  find_length(input logic [127:0][3:0] m_input,input [3:0] lst_word);
     for (int i = 0; i <128; i++) begin
-        if (m_input[i] == last_word) begin
+        if (m_input[i] == lst_word) begin
             return (i*4)+4;  // Length is position + 1 (since indexing starts at 0)
         end
     end
@@ -36,6 +36,6 @@ function int  find_length(input logic [127:0][3:0] m_input);
 endfunction
 
 always_comb begin
-size=find_length(mess);
+size=find_length(mess,last_word);
 end
 endmodule
